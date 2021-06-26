@@ -1,0 +1,199 @@
+
+/*Change theme css*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css);
+
+/* used in Formik ch 8 */
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,.1);
+  padding: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+label{
+  font-family: sans-serif;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: black;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  display: inline-block;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  width: 350px;
+  margin: 10px 0;
+  color: black;
+}
+
+input[type=text]:focus{
+  background: none;
+  border: none;
+  color: black;
+}
+
+input[type=submit]{
+  background: transparent;
+  color: black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+input[type=submit]:hover{
+  background: transparent;
+  border: 2px solid rgba(69, 39, 160, .4);
+}
+/* ----------------------*/
+/*used in animal form*/
+/*
+label {
+  display:block;
+  min-width:50px;
+}
+.title{  margin-top:10px; }
+button {margin-top:10px}
+.list {display:flex; list-style:none; margin: 0 0 20px; padding:0;}
+.list li { margin:10px};
+
+
+.dark-theme{
+  background: #333;
+  color:#fff;
+}
+.dark-theme .jumbotron{
+  background:#444;
+}
+/*----------*/
+
+/*React State Props*/
+
+.App {
+  padding:0 15px;
+}
+/*Loader js */
+.spinner svg{
+  stroke: rgba(0,0,0,0.4);
+  stroke-width:7px;
+  fill:none;
+  stroke-dasharray: 100%;
+  stroke-linecap: round;
+  animation: 0.85s cubic-bezier(0.4,0.15,0.6, 0.85) infinite spinnerAnimation;
+}
+
+.spinner{
+  margin:20px;
+  text-align:center;
+}
+@keyframes spinnerAnimation{
+  to{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+  }
+}
+
+/*-------------------*/
+
+/* BoardGame_ConditionalRendering */
+.board-game{}
+.Tiles{
+  width:600px;
+  overflow:hidden;
+}
+.Tile:hover{
+  border:2px solid #f00;
+}
+.Tile.matched{border:2px solid #040; background: #afa;}
+.Tile{
+  width:100px;
+  height:100px;
+  font-size: 32pt;
+  border:2px solid #aaa;
+  text-align:center;
+  margin:10px;
+  padding:10px;
+  float:left;
+  cursor:pointer;
+  background-color:gray;
+}
+/*--------------------------------*/
+
+/* for quiz app*/
+.question-display{
+  background: #ddd;
+  border:2px solid #ccc;
+}
+.question {font-weight: bold;}
+.question-choice {
+  height: 3em;
+  width:12em;
+  margin:5px;
+}
+.result-correct{
+  color:#272;
+}
+.result-incorrect{
+  color: #922;
+}
+/*-------------------*/
+
+/* for simple form validation example */
+.errors{
+  color:red
+}
+/* -------------------------*/
+
+/* for blog post example app */
+.blogpost textarea{
+  width:75%;
+  height:150px;
+}
+/* ------------------------ */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
