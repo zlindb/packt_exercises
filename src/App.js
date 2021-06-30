@@ -26,7 +26,7 @@ import React from 'react';
 
 //---Chapter 9 routes
 //import RoutesExample from "./components/ReactRoutes/router-example";
-import RoutesNested from "./components/ReactRoutes/NestedRoutes";
+import RoutesNested from "./components/Ch9ReactRoutes/NestedRoutes";
 
 class App extends React.Component{
 
