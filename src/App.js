@@ -26,14 +26,17 @@ import React from 'react';
 
 //---Chapter 9 routes
 //import RoutesExample from "./components/ReactRoutes/router-example";
-import RoutesNested from "./components/Ch9ReactRoutes/NestedRoutes";
+//import RoutesNested from "./components/Ch9ReactRoutes/NestedRoutes";
+
+//--Chapter 10 advance Routes
+import URLParameters from "./components/Ch10AdvanceRouting/URLParameters"
 
 class App extends React.Component{
 
   render() {
     return (
       <div className="App">
-        <RoutesNested />
+        <URLParameters />
       </div>
     ) //end return
   }
