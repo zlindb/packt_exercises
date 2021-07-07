@@ -29,14 +29,17 @@ import React from 'react';
 //import RoutesNested from "./components/Ch9ReactRoutes/NestedRoutes";
 
 //--Chapter 10 advance Routes
-import URLParameters from "./components/Ch10AdvanceRouting/URLParameters"
+//import URLParameters from "./components/Ch10AdvanceRouting/URLParameters"
+//import UnknownRoute from "./components/Ch10AdvanceRouting/UnknownRoute"
+//import NestedRoutesDashboard from "./components/Ch10AdvanceRouting/NestedRoutesDashboard";
+import ProtectedRoute from "./components/Ch10AdvanceRouting/ProtectedRoute";
 
 class App extends React.Component{
 
   render() {
     return (
       <div className="App">
-        <URLParameters />
+        <ProtectedRoute />
       </div>
     ) //end return
   }
