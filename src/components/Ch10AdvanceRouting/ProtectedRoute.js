@@ -31,7 +31,7 @@ function validateName(value){
 //as long as authService returns false, the Component is not rendered. Instead, we render a Redirect component that navigates us back to the home screen
 const authService = {
   isAuthenticated: function(){
-    return true;
+    return false;
   }
 }
 
